@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Poppins', sans-serif;
+	box-sizing: border-box;
+}
+
+button:focus, input:focus, textarea:focus {
+	outline: 0;
+}
+
+.container {
+	max-width: 1230px !important;
+}
+
+.event_wrapper {
+	height: 100vh;
+	background: #1B2945;
+	padding: 80px 0;
+}
+
+.head_text {
+	font-size: 37px;
+	font-weight: 600;
+	color: #ffffff;
+}
+
+.custom_grid .col {
+	-webkit-box-flex:  0;
+	flex: 0 0 20%;
+	max-width: 20%;
+}
+
+.event_item {
+	border-radius: 30px;
+	border: 1px solid #dee4f1;
+	padding: 50px 30px 30px 30px;
+	text-align: center;
+	transition: .4s;
+	margin-top: 50px;
+}
+
+.event_item:hover {
+	background: #ffffff;
+	transform: translateY(-5px);
+}
+
+.event_item:hover p,
+.event_item:hover span {
+	color: #000000;
+}
+
+.event_item img {
+	height: 100px;
+}
+
+.event_item p {
+	font-size: 16px;
+	font-weight: 700;
+	color: #ffffff;
+	margin: 0;
+	transition: .4s;
+}
+
+.event_item span {
+	font-size: 15px;
+	font-weight: 500;
+	color: #ffffff;
+	transition: .4s;
+}
+
+.mt_25 {
+	margin-top: 25px;
+}
+
+
+
+
+
+/*Extra large devices (large desktops, 1200px and up)*/
+@media (max-width: 1399px){
+	
+}
+@media (min-width: 1400px) { 
+	
+}
+@media (min-width: 1200px) { 
+
+}
+
+@media (max-width: 1199px) { 
+	.custom_grid .col {
+	    flex: 0 0 25%;
+	    max-width: 25%;
+	}
+
+	.event_wrapper {
+		height: auto;
+	}
+}
+
+@media (max-width: 991px) {
+	.custom_grid .col {
+	    flex: 0 0 33.333%;
+	    max-width: 33.333%;
+	}
+}
+
+/*Medium devices (tablets, 767px and down)*/
+@media (max-width: 767px) {
+	.custom_grid .col {
+	    flex: 0 0 50%;
+	    max-width: 50%;
+	}
+}
+
+/*Small devices (landscape phones, 575px and down)*/
+@media (max-width: 575px) {
+	.custom_grid .col {
+	    flex: 0 0 100%;
+	    max-width: 100%;
+	}
+
+	.event_item {
+	    max-width: 250px;
+	    margin-left: auto;
+	    margin-right: auto;
+	}
+
+}
+
+
